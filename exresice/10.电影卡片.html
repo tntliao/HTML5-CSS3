@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 设置外层容器 */
+        .outer {
+            width: 400px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            overflow: hidden;
+        }
+
+        /* 设置图片 */
+        .img-wrapper img {
+            width: 100%;
+            vertical-align: bottom;
+        }
+
+        .info {
+            padding: 0 18px;
+            color: #acaaaa;
+            font-size: 14px;
+        }
+
+        /* 设置标题 */
+        .info .title {
+            color: #717171;
+            font-size: 18px;
+            margin: 13px 0 15px 0;
+        }
+
+        .info .category {
+            margin-left: 4px;
+            margin-right: 7px;
+        }
+
+        /* 设置简介的样式 */
+        .info .intro {
+            margin: 18px 4px;
+            line-height: 20px;
+        }
+
+        /* 设置下边的内容 */
+        .star-wrapper {
+            height: 46px;
+            width: 368px;
+            line-height: 46px;
+            border-top: 1px solid #e9e9e9;
+            padding: 0 16px;
+        }
+
+        /* 设置星星的样式 */
+        .star-wrapper .star {
+            float: left;
+        }
+
+        .star-wrapper .light {
+            color: #b9cb41;
+        }
+
+        .star-wrapper .weibo {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建一个外层容器 -->
+    <div class="outer">
+        <!-- 创建图片容器 -->
+        <div class="img-wrapper">
+            <!-- 设置图片 -->
+            <img src="./images/IronMan.jpg" alt="" srcset="">
+        </div>
+        <!-- 创建内容区容器 -->
+        <div class="info">
+            <h2 class="title">
+
+                科幻电影
+            </h2>
+            <h3 class="category">
+                <i class="fas fa-map-marker-alt"></i>
+                科幻
+            </h3>
+            <p class="intro">
+                钢铁侠》(Iron Man)是由美国漫威电影工作室出品的一部科幻冒险电影，改编自同名系列漫画。
+            </p>
+        </div>
+        <!-- 创建评分的容器 -->
+        <div class="star-wrapper">
+            <!-- 创建星星 -->
+            <ul class="star">
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+            </ul>
+            <!-- 创建分享 -->
+            <ul class="weibo">
+                <li class="fab fa-weibo"></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

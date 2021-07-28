@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 字体图标库 -->
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <!-- 样式重置表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 主页样式表 -->
+    <link rel="stylesheet" href="./css/18/index.css">
+    <title>Meitu</title>
+</head>
+
+<body>
+    <!-- 
+        响应式设计的网页
+            1.移动端优先
+            2.渐进增强
+     -->
+    <!-- 外部容器 -->
+    <div class="top-bar-wrapper">
+        <div class="top-bar">
+            <!-- 左侧菜单 -->
+            <div class="left-menu">
+                <!-- 创建菜单图标 -->
+                <ul class="menu-icon">
+                    <li id="line-q"></li>
+                    <li id="line-w"></li>
+                    <li id="line-e"></li>
+                </ul>
+
+                <!-- 创建菜单 -->
+                <ul class="nav">
+                    <li><a href="javascript:;">手机</a></li>
+                    <li><a href="javascript:;">美容仪器</a></li>
+                    <li><a href="javascript:;">配件</a></li>
+                    <li><a href="javascript:;">服务支持</a></li>
+                    <li><a href="javascript:;">企业网站</a></li>
+                    <li>
+                        <a href="javascript:;"><i class="fas fa-search"></i></a>
+                        <span>搜索 Meitu.com</span>
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- logo -->
+            <h1 class="logo">
+                <a href="javascript:;">美图手机</a>
+            </h1>
+            <!-- 用户信息 -->
+            <div class="user-info">
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var menuicon = document.querySelector('.menu-icon');
+    var lineq = document.querySelector('#line-q');
+    var linew = document.querySelector('#line-w');
+    var linee = document.querySelector('#line-e');
+    var nav = document.querySelector('.nav');
+    var userinfo = document.querySelector('.user-info');
+    var index = 1;
+    menuicon.onclick = function () {
+        if (index == 1) {
+            nav.style.opacity = 1;
+            // nav.style.width = '100%';
+            lineq.style.transform = "rotateZ(43deg)";
+            linew.style.opacity = 0;
+            linee.style.transform = "rotateZ(-43deg)";
+            index = 0;
+            console.log(index);
+            userinfo.style.transform = " translateX(300%)";
+        } else {
+            nav.style.opacity = 0;
+            // nav.style.width = '0';
+            lineq.style.transform = "rotateZ(0deg)";
+            linew.style.opacity = 1;
+            linee.style.transform = "rotateZ(0deg)";
+            userinfo.style.transform = " translateX(0px)";
+            index = 1;
+            console.log(index);
+        }
+    }
+</script>
+
+</html>

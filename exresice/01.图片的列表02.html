@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去除默认样式 */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* 设置外部lu的样式 */
+        .img_list{
+            /* 设置ul的宽度 */
+            width: 190px;
+            /* 设置ul的高度 */
+            height: 470px;
+            /* 裁剪溢出的内容 */
+            overflow: hidden;
+            /* 设置ul布局颜色 */
+            background-color: #f4f4f4;
+
+            margin-left: 100px;
+
+        }
+        /* 设置li的下间距 */
+        .img_list li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        /* 设置图片的大小 */
+        .img_list img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="img_list">
+        <li><a href="http://www.baidu.com"><img src="images/1.jpg" alt="" srcset=""></a></li>
+        <li><a href="http://www.baidu.com"><img src="images/2.jpg" alt="" srcset=""></a></li>
+        <li><a href="http://www.baidu.com"><img src="images/3.jpg" alt="" srcset=""></a></li>
+    </ul>
+</body>
+
+</html>

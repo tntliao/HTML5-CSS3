@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            width: 55px;
+            height: 25px;
+            display: block;
+            overflow: hidden;
+            background-image: url('./images/btn.png');
+        }
+
+        a:hover {
+            background-position-y: 56px;
+        }
+
+        a:active {
+            background-position-y: 25px;
+        }
+
+        /* 
+            解决图片闪烁问题：
+                可以将多个小图片统一保存到一个大图片中，然后通过调整background-position来显示图片的位置
+                这样图片会同时加载到网页中 就可以有效避免出现闪烁的问题
+                这个技术在网页中应用十分广泛，被称为CSS-Sprite，这种图我们成为雪碧图
+
+            雪碧图的使用步骤：
+                1.先确定要使用的图标
+                2.测量图标的大小
+                3.更具测量结果创建一个元素
+                4.将雪碧图设置为元素的背景图片
+                5.设置一个偏移量以显示正确的图片
+
+            雪碧图的特点：
+                一次性将多个图片加载进页面，降低请求次数，加快访问速度，提升用户体验
+         */
+    </style>
+</head>
+
+<body>
+    <a href="javascript:;"></a>
+</body>
+
+</html>

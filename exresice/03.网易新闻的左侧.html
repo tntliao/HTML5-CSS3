@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .news {
+            width: 300px;
+            height: 324px;
+            border-top: 1px #dddddd solid;
+
+            margin: 50px auto;
+        }
+
+        #news_title {
+            height: 42px;
+            line-height: 42px;
+            display: inline-block;
+            border-top: 1px solid red;
+            font-size: 16px;
+            margin-top: -1px;
+            color: black;
+        }
+
+        .news_img {
+            width: 300px;
+            height: 150px;
+        }
+        #img_title {
+            font-size: 16px;
+            margin-top: -30px;
+            color: #dddddd;
+            text-align: center;
+        }
+        .news .news_list ul{
+            list-style: none;
+            font-size: 14px;
+        } 
+        .news .news_list ul li{
+           margin-top: 15px;
+        }
+        .news .news_list ul li a{
+            color: #666666;
+        }
+        .news .news_list ul li a:hover{
+            color: red;
+        }
+        .news .news_list ul li::before{
+            content: '•';
+            color:#dddddd;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="news">
+        <a href="#"><h2 id="news_title">体育</h2></a>
+        <div class="news_img">
+            <img src="./images/4.jpg" alt="" srcset="">
+            <a href="http://"><h3 id="img_title">亚冠：上港2-1复仇横滨水手</h3></a>
+        </div>
+        <div class="news_list">
+            <ul>
+                <li><a href="http://www.baidu.com">生于哈尔滨，长在集中营，"俄国疯子"杀进</a></li>
+                <li><a href="http://www.baidu.com">拳王泰森的人生从那一刻开始失控</a></li>
+                <li><a href="http://www.baidu.com">我爸与马拉多纳</a></li>
+                <li><a href="http://www.baidu.com">他是现代篮球的头号输家？</a></li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

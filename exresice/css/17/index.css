@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w,
+.top-bar,
+.banner,
+.memu,
+.course-list {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+html {
+  /* 设置rem的比值 */
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+/* 设置头部header */
+.top-bar {
+  display: flex;
+  height: 4.375rem;
+  line-height: 4.375rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar a {
+  color: #24253d;
+  font-size: 1.25rem;
+}
+.top-bar a i {
+  color: #999999;
+  font-size: 1rem;
+}
+.banner img {
+  width: 100%;
+}
+/* 设置中间菜单 */
+.memu {
+  /* 确定元素的高度 */
+  height: 8.225rem;
+  /* 设置弹性元素 */
+  display: flex;
+  /* 设置换行 */
+  flex-flow: row wrap;
+  /* 设置对齐方式 */
+  justify-content: space-between;
+  /* 设置辅轴方向的对齐方式 */
+  align-content: space-evenly;
+}
+.memu a {
+  width: 8.175rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  color: white;
+  border-radius: 0.25rem;
+}
+.memu a i {
+  margin: 0 0.8rem 0 0.95rem;
+}
+.memu .course {
+  background-color: #f97052;
+}
+.memu .star {
+  background-color: #cd6efe;
+}
+.memu .sub {
+  background-color: #f97053;
+}
+.memu .download {
+  background-color: #1bc4fb;
+}
+.course-list {
+  height: 9.85rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+}
+.course-list .title {
+  display: flex;
+  /*主轴的空间 */
+  justify-content: space-between;
+  /* 辅轴的对齐方式 */
+  align-items: center;
+}
+.course-list .title h2 {
+  font-size: 0.825rem;
+  color: #24253d;
+  border-left: 2px solid #3e84ff;
+  padding-left: 4px;
+}
+.course-list .title a {
+  font-size: 0.7rem;
+  color: #656565;
+}
+/* 设置课程列表的项 */
+.item-list {
+  display: flex;
+  overflow: auto;
+}
+.item-list .item {
+  flex: none;
+  box-sizing: border-box;
+  width: 8rem;
+  height: 8.1rem;
+  padding: 0 0.55rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin-right: 0.6rem;
+  /* 设置图标的宽度 */
+  /*课程标题 */
+  /* 设置用户信息的容器 */
+  /* 头像 */
+  /* 用户昵称 */
+}
+.item-list .item img {
+  width: 100%;
+  vertical-align: top;
+}
+.item-list .item .course-title {
+  font-size: 0.8rem;
+  color: #24253d;
+}
+.item-list .item .user-info {
+  display: flex;
+  align-items: center;
+}
+.item-list .item .avatar {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+.item-list .item .nickname {
+  margin-left: 6px;
+  font-size: 0.6rem;
+  color: #969393;
+}

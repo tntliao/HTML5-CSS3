@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+        在网页中我们也需要使用表格，我们通过table标签来创建一个表格
+     -->
+    <table border="1" width="400px" height="150px">
+        <!-- 在table中使用表格中的一行，有几个tr就有几行 -->
+        <tr>
+            <!-- 在tr中使用td表示一个单元格，有几个td就有几个单元格 -->
+            <td>A1</td>
+            <td>A1</td>
+            <td>A1</td>
+            <td>A1</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B1</td>
+            <td>B1</td>
+            <!-- rowspan 纵向的合并单元格 -->
+            <td rowspan="2">B1</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>D1</td>
+            <td>D1</td>
+            <!-- colspan 横向的合并单元格 -->
+            <td colspan="2">D1</td>
+        </tr>
+    </table>
+</body>
+
+</html>

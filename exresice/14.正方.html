@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            perspective: 800px;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            margin: 250px auto;
+            /* 设置3d变形效果 */
+            transform-style: preserve-3d;
+            animation: square 20s linear infinite;
+        }
+
+
+        .square>div {
+            position: absolute;
+            opacity: .7;
+            transition: all .4s;
+        }
+
+        .square:hover .box1 {
+            transform: rotateY(90deg) translateZ(150px);
+
+        }
+
+        .square:hover .box2 {
+            transform: rotateY(-90deg) translateZ(150px);
+
+        }
+
+        .square:hover .box3 {
+            transform: rotateX(90deg) translateZ(150px);
+
+        }
+
+        .square:hover .box4 {
+            transform: rotateX(-90deg) translateZ(150px);
+
+        }
+
+        .square:hover .box5 {
+            transform: rotateZ(0) translateZ(150px);
+
+        }
+
+        .square:hover .box6 {
+            transform: rotateX(0) translateZ(-150px);
+
+        }
+
+        .box1 {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .box2 {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .box3 {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .box4 {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .box5 {
+            transform: rotateZ(0) translateZ(100px);
+        }
+
+        .box6 {
+            transform: rotateX(0) translateZ(-100px);
+        }
+
+        @keyframes square {
+            form {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square">
+        <div class="box1"><img src="./images/square (1).jpg"></div>
+        <div class="box2"><img src="./images/square (2).jpg"></div>
+        <div class="box3"><img src="./images/square (3).jpg"></div>
+        <div class="box4"><img src="./images/square (4).jpg"></div>
+        <div class="box5"><img src="./images/square (5).jpg"></div>
+        <div class="box6"><img src="./images/square (6).jpg"></div>
+    </div>
+</body>
+
+</html>

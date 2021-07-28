@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 0 auto;
+            margin-top: 100px;
+            transition: all .5s;
+
+            /* 变形的原点 默认值 center */
+            transform-origin: 0 0;
+        }
+
+        .box1:hover {
+            /* 
+                对元素进行缩放的函数
+                    scaleX() 水平方向缩放
+                    scaleY() 垂直方向缩放
+                    scale() 双方向的缩放
+             */
+            transform: scale(2);
+            background-color: yellowgreen;
+        }
+
+        .img-wrapper {
+            width: 200px;
+            height: 200px;
+            border: 10px solid red;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .img-wrapper img {
+            transition: all 5s;
+        }
+
+        .img-wrapper:hover img {
+            transform: scale(20);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="img-wrapper">
+        <img src="../exresice/images/square (1).jpg" alt="">
+    </div>
+</body>
+
+</html>

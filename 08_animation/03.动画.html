@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inner {
+            height: 500px;
+            border-bottom: 10px solid black;
+            overflow: hidden;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: linear-gradient(yellow, green);
+            animation: ball 2s infinite alternate;
+        }
+
+        @keyframes ball {
+            form {
+                margin-top: 0px;
+            }
+
+            25%,
+            to {
+                margin-top: 400px;
+            }
+
+            50% {
+                margin-top: 100px;
+            }
+
+            /* to {
+                margin-top: 400px;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>

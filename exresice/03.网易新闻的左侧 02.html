@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 设置容器的样式 */
+        .news_wrapper {
+            /* 设置宽度 */
+            width: 300px;
+            /* 设置高度 */
+            height: 357px;
+            /* 设置居中 */
+            margin: 50px auto;
+            /* 设置上边框 */
+            border-top: 10x solid #dddddd;
+        }
+
+        /* 设置news_title */
+        .news_title {
+            /* 为了边框和文字宽度一致，需要将h2转换行内块元素 */
+            display: inline-block;
+            /* 设置高度 */
+            height: 40px;
+            /* 设置上边框 */
+            border-top: 1px red solid;
+            /* 通过margin-top将h2上移，盖住上边框 */
+            margin-top: -1px;
+        }
+
+        /* 设置title中的超链接样式 */
+        .news_title a {
+            /* 设置字体大小 */
+            font-size: 16px;
+            /* 去除下划线 */
+            text-decoration: none;
+            /* 设置颜色 */
+            color: #404068;
+            /* 设置文字的加粗效果 */
+            font-weight: bold;
+        }
+
+        /* 设置图片容器的高度 */
+        .news_img {
+            height: 150px;
+        }
+
+        /* 设置图片的文字效果 */
+        #img_title {
+            /* 设置字体大小 */
+            font-size: 16px;
+            /* 向上移动文字 */
+            margin-top: -30px;
+            /* 设置字体颜色 */
+            color: #ffffff;
+            /* 设置文字居中 */
+            text-align: center;
+        }
+
+        /* 设置新闻列表 */
+        .news_list {
+            /* 设置上外边距 */
+            margin-top: 20px;
+        }
+
+        /* 设置li */
+        .news_list li {
+            /* 设置下外边距 */
+            margin-bottom: 15px;
+            /* 去除默认样式 */
+            list-style: none;
+        }
+
+        /* 通过before伪元素，来为每一个li添加项目符号 */
+        .news_list li ::before {
+            content: '•';
+            color: #dddddd;
+            margin-right: 5px;
+        }
+
+        /* 设置li中的文字 */
+        .news_list li a {
+            /* 设置字体大小 */
+            font-size: 14px;
+            /* 设置字体颜色 */
+            color: #666666;
+            /* 去除下划线 */
+            text-decoration: none;
+        }
+
+
+
+        .news_list li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建一个新闻列表的外侧容器 -->
+    <div class="news_wrapper">
+        <!-- 创建一个标题 -->
+        <h2 class="news_title">
+            <a href="#">体育</a>
+        </h2>
+
+        <!-- 创建一个图片的容器 -->
+        <div class="news_img">
+            <a href="#">
+                <img src="./images/4.jpg" alt="" srcset="">
+                <h3 id="img_title">亚冠：上港2-1复仇横滨水手</h3>
+            </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="news_list">
+            <li><a href="http://www.baidu.com">生于哈尔滨，长在集中营，"俄国疯子"杀进</a></li>
+            <li><a href="http://www.baidu.com">拳王泰森的人生从那一刻开始失控</a></li>
+            <li><a href="http://www.baidu.com">我爸与马拉多纳</a></li>
+            <li><a href="http://www.baidu.com">他是现代篮球的头号输家？</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

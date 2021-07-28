@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            /* 原生css变量使用 -- 变量，使用 : 赋值 */
+            --color: greenyellow;
+            --length: 200px;
+        }
+
+        .box1 {
+            width: var(--length);
+            height: var(--length);
+            background-color: var(--color);
+        }
+
+        .box2 {
+            width: var(--length);
+            height: var(--length);
+            color: var(--color);
+        }
+
+        .box3 {
+            width: var(--length);
+            height: var(--length);
+            border: 10px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        - Less是一门css的预处理器，通过Less可以编写更少的代码实现更强大的样式
+        - 在Less中添加了许多的新特性，像对变量的支持，对mixin的支持...
+        - Less的语法和css语法一致，但是Less中添加了许多对css的扩展
+            所有浏览器无法直接执行less代码，要执行必须转换为css，然后再由浏览器执行
+     -->
+    <div class="box1">aaaaa</div>
+    <div class="box2">aaaaa</div>
+    <div class="box3">aaaaa</div>
+</body>
+
+</html>

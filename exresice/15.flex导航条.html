@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav {
+            width: 1120px;
+            line-height: 48px;
+            background-color: #e8e7e3;
+            margin: 100px auto;
+            /* 设置弹性容器 */
+            display: flex;
+
+            /* 
+                弹性容器下的子元素叫弹性元素 只有子元素是,后代元素不是
+            */
+        }
+
+        .nav li {
+            list-style: none;
+            flex-grow: 1;
+        }
+
+        .nav a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: #777777;
+        }
+
+        .nav a:hover {
+            background-color: #3f3f3f;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="http://www.baidu.com">HTML/CSS</a></li>
+        <li><a href="http://www.baidu.com">Bowser Side</a></li>
+        <li><a href="http://www.baidu.com">Server Side</a></li>
+        <li><a href="http://www.baidu.com">Programming</a></li>
+        <li><a href="http://www.baidu.com">XML</a></li>
+        <li><a href="http://www.baidu.com">WEB Buiding</a></li>
+        <li><a href="http://www.baidu.com">Reference</a></li>
+    </ul>
+</body>
+
+</html>

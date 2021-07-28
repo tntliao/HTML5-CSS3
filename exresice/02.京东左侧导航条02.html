@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            /* 设置背景颜色 */
+            background-color: #f4f4f4;
+        }
+
+        /* 设置菜单外部容器 */
+        .left_nav {
+            /* 设置宽度 */
+            width: 190px;
+            /* 设置高度 */
+            height: 470px;
+            /* 设置背景颜色 */
+            background-color: white;
+            /* 设置上内边距10px */
+            padding-top: 10px;
+        }
+
+        /* 设置菜单内部的item */
+        .left_nav .item {
+            /* 设置每个item的高度 */
+            height: 25px;
+            /* 要让一个文字在父元素中垂直居中，只需要将父元素的line-heght设置为一个和父元素高度一样即可文字垂直水平居中 */
+            line-height: 25px;
+            /* 设置item的右内边距，将文字向内移动，没有设置宽度为auto，所有没有溢出 */
+            padding-left: 18px;
+        }
+
+        /* 设置item鼠标移入状态*/
+        .left_nav .item:hover {
+            background-color: #d9d9d9;
+        }
+
+        /* 为iten每个a设置样式 */
+        .left_nav .item a {
+            /* 去除下划线 */
+            text-decoration: none;
+            /* 设置字体大小 */
+            font-size: 14px;
+            /* 设置字体颜色 */
+            color: #333333;
+        }
+
+        /* 设置字体鼠标移入状态 */
+        .left_nav .item a:hover {
+            color: #c81623;
+        }
+
+        #list_span {
+            font-size: 13px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建一个外部的容器nav(div) div(div) ul(li) -->
+    <div class="left_nav">
+
+        <div class="item">
+            <a href="http://">家用电器</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">手机</a><span id="list_span">/</span>
+            <a href="http://">运营商</a><span id="list_span">/</span>
+            <a href="http://">数码</a>
+
+        </div>
+
+        <div class="item">
+            <a href="http://">电脑</a><span id="list_span">/</span>
+            <a href="http://">办公</a>
+
+        </div>
+
+        <div class="item">
+            <a href="http://">家居</a><span id="list_span">/</span>
+            <a href="http://">家具</a><span id="list_span">/</span>
+            <a href="http://">家装</a><span id="list_span">/</span>
+            <a href="http://">厨具</a>
+
+        </div>
+
+        <div class="item">
+            <a href="http://">男装</a><span id="list_span">/</span>
+            <a href="http://">女装</a><span id="list_span">/</span>
+            <a href="http://">童装</a><span id="list_span">/</span>
+            <a href="http://">内衣</a>
+
+        </div>
+
+        <div class="item">
+            <a href="http://">美妆</a><span id="list_span">/</span>
+            <a href="http://">个护清洁</a><span id="list_span">/</span>
+            <a href="http://">宠物</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">女鞋</a><span id="list_span">/</span>
+            <a href="http://">箱包</a><span id="list_span">/</span>
+            <a href="http://">钟表</a><span id="list_span">/</span>
+            <a href="http://">珠宝</a>
+
+        </div>
+
+        <div class="item">
+            <a href="http://">男鞋</a><span id="list_span">/</span>
+            <a href="http://">运动</a><span id="list_span">/</span>
+            <a href="http://">户外</a>
+
+        </div>
+
+        <div class="item">
+            <a href="http://">房产</a><span id="list_span">/</span>
+            <a href="http://">汽车</a><span id="list_span">/</span>
+            <a href="http://">汽车用品</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">母婴</a><span id="list_span">/</span>
+            <a href="http://">玩具乐器</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">食品</a><span id="list_span">/</span>
+            <a href="http://">酒类</a><span id="list_span">/</span>
+            <a href="http://">生鲜</a><span id="list_span">/</span>
+            <a href="http://">特产</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">艺术</a><span id="list_span">/</span>
+            <a href="http://">礼品鲜花</a><span id="list_span">/</span>
+            <a href="http://">农资绿植</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">医药保健</a><span id="list_span">/</span>
+            <a href="http://">计生情趣</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">图书</a><span id="list_span">/</span>
+            <a href="http://">文娱</a><span id="list_span">/</span>
+            <a href="http://">教育</a><span id="list_span">/</span>
+            <a href="http://">电子书</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">机票</a><span id="list_span">/</span>
+            <a href="http://">酒店</a><span id="list_span">/</span>
+            <a href="http://">旅行</a><span id="list_span">/</span>
+            <a href="http://">生活</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">理财</a><span id="list_span">/</span>
+            <a href="http://">众筹</a><span id="list_span">/</span>
+            <a href="http://">白条</a><span id="list_span">/</span>
+            <a href="http://">保险</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">安装</a><span id="list_span">/</span>
+            <a href="http://">维修</a><span id="list_span">/</span>
+            <a href="http://">清洗</a><span id="list_span">/</span>
+            <a href="http://">二手</a>
+        </div>
+
+        <div class="item">
+            <a href="http://">工业品</a>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

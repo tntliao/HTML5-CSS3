@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            border: 1px solid red;
+        }
+
+        /* 设置表样式 */
+        .clock {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 10px solid black;
+            position: relative;
+        }
+
+        /* 设置时针，分针，秒针 内容块居中 */
+        .sec-wrapper,
+        .min-wrapper,
+        .hou-wrapper {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        /* 设置秒针的大小 */
+        .sec-wrapper {
+            width: 95%;
+            height: 95%;
+            animation: time 10s steps(60) infinite;
+        }
+
+        .sec {
+            width: 4px;
+            height: 50%;
+            background-color: red;
+            margin: 0 auto;
+        }
+
+
+        /* 设置分针的大小 */
+        .min-wrapper {
+            width: 75%;
+            height: 75%;
+            animation: time 600s linear infinite;
+        }
+
+        .min {
+            width: 5px;
+            height: 50%;
+            background-color: black;
+            margin: 0 auto;
+        }
+
+        /* 设置时针的大小 */
+        .hou-wrapper {
+            width: 55%;
+            height: 55%;
+            animation: time 7200s linear infinite;
+        }
+
+        .hou {
+            width: 5px;
+            height: 50%;
+            background-color: black;
+            margin: 0 auto;
+        }
+
+        @keyframes time {
+            form {
+                transform: rotateZ(0);
+            }
+
+            to {
+                transform: rotateZ(360deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建表的容器 -->
+    <div class="clock">
+        <!-- 创建时针容器 -->
+        <div class="hou-wrapper">
+            <div class="hou"></div>
+        </div>
+        <!-- 创建分针容器 -->
+        <div class="min-wrapper">
+            <div class="min"></div>
+        </div>
+        <!-- 创建秒针容器 -->
+        <div class="sec-wrapper">
+            <div class="sec"></div>
+        </div>
+    </div>
+</body>
+
+</html>

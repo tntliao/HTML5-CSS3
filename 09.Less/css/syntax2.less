@@ -1,0 +1,67 @@
+.box1 {
+    .box2 {
+        color: red;
+    }
+
+    >.box3 {
+        color: blue;
+    }
+
+
+    &:hover {
+        /*为box1设置一个hover*/
+        // & 表示外界的父元素 (加上 & 空格，不加有空格就成后代了)
+        color: cadetblue;
+    }
+
+    div & {
+        width : 100px;
+        height: 100px;
+    }
+
+}
+
+.p1 {
+    width : 100px;
+    height: 100px;
+}
+
+/* :extend() 对当前选择器扩展指定选择器的样式(选择器分组) */
+.p2:extend(.p1) {
+    color: red;
+}
+
+.p3 {
+    //直接对指定的样式进行引用，这里就相当于将p2的样式在这里复制
+    //mixin
+    .p2();
+}
+
+//使用类选择器时可以在选择器后面陶=套一个括号，这时我们实际创建了一个mixins
+.pp() {
+    width           : 1000px;
+    height          : 350px;
+    background-color: red;
+}
+
+.p4 {
+    // .pp;
+    .pp();
+}
+
+//混合函数 在混合函数中可以直接设置变量
+.test(@w: 100px, @h: 75px, @c: #bfa) {
+    width           : @w;
+    height          : @h;
+    background-color: @c;
+}
+
+.liaojiajia {
+    .test(200px);
+}
+
+.jiajia {
+    .test(@h: 200px; )
+}
+
+//还有很多方法参考手册

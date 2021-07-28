@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            /* 
+                text-decoration 设置文本修饰
+                    可选值：
+                            none         什么都没有
+                            underline    下划线
+                            line-through 删除线
+                            overline     上划线
+             */
+            /* text-decoration: none; */
+            /* text-decoration: underline; */
+            text-decoration: line-through;
+            /* text-decoration: overline; */
+        }
+
+        .box2 {
+            width: 200px;
+
+            /* 
+                width-space 设置网页如果处理空白
+                    可选值：
+                        normal  正常
+                        nowrap  不换行
+                        pre     保留空白
+             */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">今天2020年12月5日星期六</div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente reiciendis cupiditate quia velit facilis
+        repellat accusamus fugit expedita, ex esse sed nam ut fugiat vero explicabo modi? Sequi, eius libero.
+    </div>
+</body>
+
+</html>

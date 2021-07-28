@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        将所有的段落设置为红色(字体)
+
+        元素选择器
+            作用：根据标签名来选中指定的元素
+            语法：标签名{}
+            例子: p{} h1{} div{}
+
+        id选择器
+            作用：根据元素的id属性值选中一个元素
+            语法：#id属性值{}
+            例子：#bxo{} #red{}
+     -->
+
+    <style>
+        p {
+            color: green;
+        }
+
+        /*
+            OPQXYZZ 设置红色 
+         */
+        #red {
+            color: red;
+        }
+
+        /*
+            HIJKLNM 设置蓝色
+            LIAOJIA 设置蓝色
+         */
+        .blue {
+            color: blue;
+        }
+
+        /* 
+            统配选择器
+                作用：选中页面中所有元素
+                语法：*{}
+        */
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>ABCDEFD</p>
+    <p class="blue">HIJKLNM</p>
+    <p id="red">OPQXYZZ</p>
+    <!-- 
+        class 是一个标签的属性  它和id类似，不同的是class可以重复使用
+            可以通过class属性来为元素分组
+            可以同时为一个元素指定多个class属性
+            例子：<div class="div1 div2"></div>
+     -->
+    <p class="blue">LIAOJIA</p>
+
+    <div class="div1 div2"></div>
+</body>
+
+</html>

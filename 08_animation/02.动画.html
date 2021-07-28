@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inner {
+            width: 700px;
+            height: 350px;
+            background-color: wheat;
+            margin: 0 auto;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: turquoise;
+
+            /* 设置动画 */
+            /* animation-name: 要对当前元素生效的关键帧的名字 */
+            animation-name: test;
+
+            /* animation-duration: 动画的执行时间 */
+            animation-duration: 4s;
+
+            /* 动画的延时 delay 翻译  延时 */
+            /* animation-delay: 2s; */
+
+            animation-timing-function: ease-in-out;
+
+            /* 
+                animation-iteration-count: 动画执行次数
+                    可选值
+                        1 2 3 4... 次数
+                        infinte 无限的
+            */
+            animation-iteration-count: 1;
+
+            /* 
+                animation-direction
+                    指定动画运行的方向
+                        可选值：
+                            normal 默认值 从 from 向 to 运行 每次都是这样
+                            reverse 从 to 向 from 运行 每次都是这样
+                            alternate 从 from 向 to 运行 重复执行动画方向执行
+                            alternate-reverse 从 to 向 from 运行 重复执行动画方向执行
+            */
+            animation-direction: alternate;
+
+
+            /* 
+                animation-play-state: 设置动画的执行状态
+                    可选值:
+                        running 默认值 动画执行
+                        paused 动画暂停
+            */
+            /* animation-play-state: paused; */
+
+            /* 
+                animation-fill-mode: 动画的填充模式
+                    可选值：
+                        none 默认值 动画执行完毕元素回到原来位置
+                        forwards 动画执行完毕会停止在动画结束的位置
+                        backwards 动画延时等待时，元素就处于开始位置
+                        both 结合forwards 和 backwards
+            */
+            animation-fill-mode: forwards;
+        }
+
+
+        /* 
+            动画
+                动画和过渡类似，都是可以时序一下动态的效果
+                    不同的是过渡需要在某个属性发生变化时才会触发
+                    动画框样自动触发动态效果
+                设置动画效果，必须要设置一个关键帧，关键帧设置了一个动画执行每一个步骤
+        */
+
+        /* 关键帧 */
+        @keyframes test {
+
+            /* form 表示动画的开始位置 也可以用 0% */
+            form {
+                margin-left: 0px;
+            }
+
+            /* to 表示动画结束位置 也可以使用100% */
+            to {
+                margin-left: 600px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>

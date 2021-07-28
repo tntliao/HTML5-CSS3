@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            perspective: 800px;
+        }
+
+        body {
+            height: 500px;
+            width: 500px;
+            border: 1px solid red;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(yellow, green);
+            margin: 100px auto;
+
+            transition: all 3s;
+        }
+
+        body:hover .box1 {
+            /* 
+                通过选择框样使元素沿着 x y 或 z 旋转指定的角度
+                    rotateX()
+                    rotateY()
+                    rotrteZ()
+             */
+            /* turn 表示圈的意思 */
+            transform: rotateX(1turn);
+            /* transform: rotateX(360deg); */
+            /* transform: rotateY(360deg); */
+            /* transform: rotateZ(360deg); */
+            /* 是否显示元素的背面 */
+            /* backface-visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        廖
+    </div>
+</body>
+
+</html>

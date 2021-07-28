@@ -1,0 +1,41 @@
+.box1 .box2 {
+  color: red;
+}
+.box1 > .box3 {
+  color: blue;
+}
+.box1:hover {
+  /*为box1设置一个hover*/
+  color: cadetblue;
+}
+div .box1 {
+  width: 100px;
+  height: 100px;
+}
+.p1,
+.p2 {
+  width: 100px;
+  height: 100px;
+}
+/* :extend() 对当前选择器扩展指定选择器的样式(选择器分组) */
+.p2 {
+  color: red;
+}
+.p3 {
+  color: red;
+}
+.p4 {
+  width: 1000px;
+  height: 350px;
+  background-color: red;
+}
+.liaojiajia {
+  width: 200px;
+  height: 75px;
+  background-color: #bfa;
+}
+.jiajia {
+  width: 100px;
+  height: 200px;
+  background-color: #bfa;
+}

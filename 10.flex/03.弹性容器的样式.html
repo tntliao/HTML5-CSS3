@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul {
+            width: 300px;
+            height: 600px;
+            border: 5px solid red;
+            /* 设置ul为弹性容器 */
+            display: flex;
+
+
+            /* 
+                flex-wrap:
+                    设置弹性元素是否在弹性容器中自动换行
+                    可选值：
+                        nowrap  默认值，元素不会自动换行
+                        wrap    元素沿着辅轴方向自动换行
+                        wrap-reverse    元素沿着辅轴反方向换行
+             */
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flex: wrap 和 direction 的简写属性 */
+            /* flex-flow: row wrap; */
+
+            /* 
+                justify-content
+                    - 如何分配主轴上的空白空间(主轴上的元素如何排列)
+                    - 可选值：
+                        flex-start 元素沿着主轴起边排列
+                        flex-end 元素沿着主轴终边排列
+                        center 元素居中排列
+                        spac-around 空白分布到两侧
+                        spac-between 空白均匀分布到元素间
+                        spac-evenly 空白分布到元素的单侧
+             */
+            /* justify-content: space-around; */
+
+            /* 
+                algin-items:
+                    - 元素在辅轴上如何对齐
+                    - 元素间的关系
+                            stretch 默认值，将元素的长度为相同的值
+                            flex-strat 元素不会拉伸，沿着辅轴起边对齐
+                            flex-end 沿着辅轴的终边对齐
+                            center 居中对齐
+                            baseline 基线对齐
+             */
+            align-items: center;
+
+            /* align-content: 辅轴空白空间的分布 */
+        }
+
+        li {
+            width: 100px;
+            /* height: 100px; */
+            font-size: 50px;
+            background-color: royalblue;
+            flex-shrink: 0;
+        }
+
+        li:nth-child(2) {
+            background-color: rosybrown;
+        }
+
+        li:nth-child(3) {
+            background-color: salmon;
+            /* align-self: 用来覆盖当前弹性元素上的algin-items  */
+            align-self:flex-start ;
+        }
+
+        li:nth-child(4) {
+            background-color: green;
+        }
+
+        li:nth-child(5) {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            1
+            <div>2</div>
+            <div>3</div>
+        </li>
+        <li>2
+            <div>3</div>
+        </li>
+        <li>3</li>
+        <li>
+            4
+            <div>3</div>
+            <div>2</div>
+        </li>
+        <li>5
+            <div>4</div>
+        </li>
+    </ul>
+</body>
+
+</html>

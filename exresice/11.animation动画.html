@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        .box1 {
+            width: 95px;
+            height: 94px;
+            margin: 0 auto;
+            background-image: url('./images/animation.jpg');
+            background-position: 0 0;
+            transition: all .5s steps(5);
+        }
+
+        .box1:hover {
+            background-position: -465px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+</body>
+
+</html>

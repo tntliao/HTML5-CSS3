@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+a {
+    font-size      : 1px;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    font-size : 0;
+}
+
+@total-width: 390;
+
+.w {
+    width : 360/100rem;
+    margin: 0 auto;
+}
+
+html {
+    font-size       : 100vw/@total-width * 100;
+    background-color: #eff0f4;
+}
+
+//设置头部样式
+.top:extend(.w) {
+    height         : 90/100rem;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+    a {
+        display  : block;
+        font-size: 20/100rem;
+        color    : #b4b4b6;
+    }
+
+    .center-title a {
+        font-size: 30/100rem;
+        color    : #1c1b3b;
+    }
+}
+
+/* 设置轮播图样式 */
+.carousel-map:extend(.w) {
+    margin-bottom: 15/100rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* 导航部分样式 */
+.navigation:extend(.w) {
+    display        : flex;
+    height         : 130/100rem;
+    flex-flow      : row wrap;
+    justify-content: space-between;
+    align-content  : space-between;
+    margin-bottom  : 0.15rem;
+
+    a {
+        display      : block;
+        font-size    : 19/100rem;
+        width        : 170/100rem;
+        height       : 55/100rem;
+        line-height  : 55/100rem;
+        border-radius: 6px;
+        color        : white;
+
+        i {
+            margin: 0 20/100rem 0 16/100rem;
+        }
+    }
+
+    .cur {
+        background-color: #ff7ebb;
+    }
+
+    .sta {
+        background-color: #e79fff;
+    }
+
+    .sub {
+        background-color: #9faaff;
+    }
+
+    .dow {
+        background-color: #9fffee;
+    }
+}
+
+.title-bar:extend(.w) {
+    display        : flex;
+    justify-content: space-between;
+
+    h2 a {
+        color: black;
+    }
+
+    a {
+        display  : block;
+        font-size: 20/100rem;
+        color    : #656565;
+    }
+}
+
+/* 标题栏部分样式 */
+.course-list:extend(.w) {
+    height     : 200/100rem;
+    display    : flex;
+    flex-flow  : row nowrap;
+    align-items: center;
+    overflow   : auto;
+    padding    : 0 10/100rem;
+
+    .img-info {
+        flex           : none;
+        box-sizing     : border-box;
+        width          : 1.7rem;
+        height         : 1.84rem;
+        box-shadow     : 0 0 8px rgba(0, 0, 0, 0.3);
+        border-radius  : 6px;
+        padding        : 0.18rem;
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        margin-right   : 0.15rem;
+
+        .photo-img {
+
+            a {
+                display: block;
+
+                img {
+                    vertical-align: top;
+                    width         : 100%;
+                }
+            }
+
+        }
+
+        .info-title {
+            font-size: 0;
+
+            a {
+                font-size: 20/100rem;
+                color    : #1c1b3b;
+            }
+        }
+
+        .info {
+            display: flex;
+
+            a {
+                color      : #afacac;
+                line-height: 2;
+            }
+
+            .portrait {
+                width       : 24/100rem;
+                height      : 24/100rem;
+                margin-right: 6/100rem;
+
+                img {
+                    width         : 100%;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+}
